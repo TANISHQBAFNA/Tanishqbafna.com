@@ -1,44 +1,935 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
-<script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyAjnhdHBiEVo_NFdQSboH0bjQ_Lp6aA49U",
-          authDomain: "tanishqbafna-27236.firebaseapp.com",
-          databaseURL: "https://tanishqbafna-27236.firebaseio.com",
-          projectId: "tanishqbafna-27236",
-          storageBucket: "tanishqbafna-27236.appspot.com",
-          messagingSenderId: "648135525868",
-          appId: "1:648135525868:web:09d3f1773880667488acc9",
-          measurementId: "G-4MT5SCYWDG"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>Tanishq Bafna | Home</title><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:image" content="assets/img/Icon%20map-jewelry-store.svg"><meta name="robots" content="index,follow"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="User Experience Designer with 2+ years experience in interaction and visual design, passionate about Inclusive design, Extended Reality, and Technology."><meta property="og:type" content="website"><link rel="icon" type="image/svg+xml" sizes="103x93" href="assets/img/Icon%20map-jewelry-store.svg"><link rel="icon" type="image/svg+xml" sizes="103x93" href="assets/img/Icon%20map-jewelry-store.svg"><link rel="icon" type="image/svg+xml" sizes="103x93" href="assets/img/Icon%20map-jewelry-store.svg"><link rel="icon" type="image/svg+xml" sizes="103x93" href="assets/img/Icon%20map-jewelry-store.svg"><link rel="icon" type="image/svg+xml" sizes="103x93" href="assets/img/Icon%20map-jewelry-store.svg"><link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="assets/css/Montserrat.css"><link rel="stylesheet" href="assets/css/Montserrat.css"><link rel="stylesheet" href="assets/css/Playfair%20Display.css"><link rel="stylesheet" href="assets/css/Playfair%20Display.css"><link rel="stylesheet" href="assets/css/Raleway.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"><link rel="stylesheet" href="assets/css/Animation-Final.css"><link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/Social-Icons-Vertical.css"><script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-</head><body><nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" data-aos="fade-down" id="mainNav" style="border-style: none;"><div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html"><span style="color: rgb(40,40,70);font-family: 'Playfair Display', serif!important;font-size: 27px;letter-spacing: 0px;">TanishqBafna</span><img src="assets/img/Icon%20map-jewelry-store.svg" width="27" height="26" style="margin-left: 9px;"></a><button data-bs-toggle="collapse" class="navbar-toggler pulse animated infinite" data-bs-target="#navcol-2" id="nav-btn" style="background: #ffffff;border-color: rgba(255,255,255,0.55);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-soundwave" style="color: rgb(40,40,70);font-size: 35px;">
-  <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z"></path>
-</svg></button><div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navcol-2"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="work.html">My work</a></li><li class="nav-item"><a class="nav-link" href="faq.html">FAQ's&nbsp;</a></li><li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li><li class="nav-item"><a class="btn btn-primary" role="button" href="index.html">Resume</a></li></ul></div></div></nav><header class="py-5" style="margin-top: 0px;"><div class="container pt-4 pt-xl-5"><div class="row pt-5"><div class="col-12 col-md-11 col-lg-9 col-xl-9 col-xxl-9 text-center text-md-start mx-auto"><div class="text-center"><h1 class="display-4 fw-bold text-center mb-5" data-aos="fade-down" data-aos-duration="400"><img class="img-fluid" id="hero-logo" src="assets/img/nam.webp" width="80" height="87">&nbsp;Namaste, I’m Tanishq<br>				<div class="caption v-left text-left">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tanishq Bafna | Home</title>
+    <meta name="theme-color" content="#ffd200">
+    <meta name="twitter:description" content="I am a creative UX designer with 3+ years of experience in Interaction and Visual Design. My passion lies in Inclusive Design, Extended Reality, and Technology. I have completed user testing and incorporated feedback into new iterations while maintaining a consistent user experience.
+Having worked closely with product managers, designers, engineers, and stakeholders to define the best way to approach a problem and translate feedback and requirements from design sessions into recommended design solutions and high-fidelity prototypes. I have also been responsible for analysing research from multiple sources to determine connections and create the design of new digital experiences. My excellent written, verbal, and presentation/storytelling skills make me an effective communicator, and I have experience working in both start-ups and fast-paced large corporations. I am confident in my ability to support front-end development throughout the entire design-dev-deploy process and to plan and facilitate collaborative work sessions with all levels of the customer organization.
+">
+    <meta name="twitter:image" content="https://www.tanishqbafna.com/assets/img/Icon map-jewelry-store.svg">
+    <meta property="og:image" content="https://www.tanishqbafna.com/assets/img/Icon map-jewelry-store.svg">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Tanishq Bafna">
+    <meta name="description" content="User Experience Designer with 3+ years experience in interaction and visual design, passionate about Inclusive design, Extended Reality, and Technology.">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Portfolio_new",
+            "url": "https://www.tanishqbafna.com/"
+        }
+    </script>
+    <link rel="icon" type="image/svg+xml" sizes="103x93" href="assets/img/Icon%20map-jewelry-store.svg">
+    <link rel="icon" type="image/svg+xml" sizes="103x93" href="assets/img/Icon%20map-jewelry-store.svg">
+    <link rel="icon" type="image/svg+xml" sizes="103x93" href="assets/img/Icon%20map-jewelry-store.svg">
+    <link rel="icon" type="image/svg+xml" sizes="103x93" href="assets/img/Icon%20map-jewelry-store.svg">
+    <link rel="icon" type="image/svg+xml" sizes="103x93" href="assets/img/Icon%20map-jewelry-store.svg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aguafina+Script&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAjnhdHBiEVo_NFdQSboH0bjQ_Lp6aA49U",
+    authDomain: "tanishqbafna-27236.firebaseapp.com",
+    databaseURL: "https://tanishqbafna-27236.firebaseio.com",
+    projectId: "tanishqbafna-27236",
+    storageBucket: "tanishqbafna-27236.appspot.com",
+    messagingSenderId: "648135525868",
+    appId: "1:648135525868:web:09d3f1773880667488acc9",
+    measurementId: "G-4MT5SCYWDG"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md fixed-top navbar-shrink py-3 navbar-light" data-aos="fade-down" id="mainNav" data-bs-target="#mainNav">
+        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html"><span style="color: rgb(40,40,70);font-family: 'Playfair Display', serif!important;font-size: 27px;letter-spacing: 0px;font-weight: 600;">TanishqBafna</span><img src="assets/img/Icon%20map-jewelry-store.svg" width="27" height="26" style="margin-left: 9px;"></a><button data-bs-toggle="collapse" class="navbar-toggler pulse animated infinite" data-bs-target="#navcol-1" id="nav-btn-1" style="background: #ffffff;border-color: rgba(255,255,255,0.55);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-soundwave pulse animated infinite" style="color: rgb(40,40,70);font-size: 35px;">
+                    <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z"></path>
+                </svg></button>
+            <div class="collapse navbar-collapse d-md-flex d-lg-flex justify-content-md-end justify-content-lg-end" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item nav-hover"><a class="nav-link" href="About%20me.html">About me</a></li>
+                    <li class="nav-item nav-hover"><a class="nav-link" href="faq.html">FAQ's&nbsp;</a></li>
+                    <li class="nav-item nav-hover"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item nav-hover"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-primary d-flex justify-content-center align-items-center" role="button" href="resume.pdf">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="py-5" style="margin-top: 0px;">
+        <div class="container pt-4 pt-xl-5">
+            <div class="row pt-5">
+                <div class="col-12 col-md-12 col-lg-11 col-xl-10 col-xxl-9 text-center text-md-start mx-auto">
+                    <div class="text-center">
+                        <h1 class="display-4 fw-normal text-center mb-5" data-aos="fade-down" data-aos-duration="400" style="font-weight: 400!important;"><img class="img-fluid" id="hero-logo" src="assets/img/nam.webp" width="80" height="87">&nbsp;Namaste, I’m Tanishq<br>				<div class="caption v-left text-left">
 					<h1 class="cd-headline clip">
 			            <span class="cd-words-wrapper">
-			              <b class="is-visible">UX</b>
+			              <b class="is-visible">Product</b>
+                            <b>UX</b> 
 			              <b id="vd">Visual</b>
                            <b>Interaction</b> 
                         </span>
                         <span class="blc">Designer.</span> 
 	          		</h1>
-				</div></h1><p class="fs-5 text-center text-muted mb-5" data-aos="fade-down" data-aos-duration="450" id="herop">2+ years of Experience in Interaction and Visual Design. A creative UI designer accomplished in user testing.&nbsp;I'm Passionate about Inclusive Design, Extended Reality and Technology&nbsp;</p><form class="d-flex flex-row justify-content-center flex-wrap" data-aos="fade-down" data-aos-duration="500" data-bss-redirect-url="resume.pdf" data-bss-subject="Your Resume was viewed" data-bss-loading-message="Sending" data-bss-success-title="Success" data-bss-success-message="Your Message is sent" data-bss-recipient="b2129a45c7f6ee88ec42af5f34fec28a" data-bss-error-message="Please enter valid email" data-bss-close="Exit" data-bss-empty-form-message="Please enter valid email"><div class="shadow-lg mb-3"><input class="form-control" type="email" name="email" placeholder="Your Email"></div><div class="shadow-lg mb-3"><button class="btn btn-primary" type="submit">View Resume</button></div></form></div><div class="text-start d-flex d-sm-flex flex-row justify-content-center justify-content-sm-center social-icons" data-aos="fade-down" data-aos-duration="550" style="padding-top: 10px;padding-bottom: 20px;background-color: rgba(255,255,255,0);"><a class="d-xxl-flex justify-content-xxl-center" href="linkedin.html" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin" style="border-style: none;">
-  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
-</svg></a><a href="https://github.com/TANISHQBAFNA" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github" style="border-style: none;">
-  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-</svg></a><a href="https://www.behance.net/tanishqbafna" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-behance" style="border-style: none;">
-  <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z"></path>
-</svg></a></div></div><div class="col-12 col-sm-10 col-md-7 col-lg-6 col-xl-7 col-xxl-8 mx-auto" data-aos="fade-down" data-aos-duration="600" id="hero-img" style="margin-top: 20px;background: url(&quot;assets/img/Group%20172.webp&quot;) center / contain no-repeat;"><img class="img-fluid pulse animated infinite adobe logo-img" src="assets/img/icons8-adobe-96.webp"><img class="img-fluid pulse animated infinite figma logo-img" src="assets/img/icons8-figma-48.webp"><img class="img-fluid" data-aos="fade-down" data-aos-duration="650" src="assets/img/Group%20138.webp" width="643" height="484"></div></div></div></header><section><div class="container py-4 py-xl-5"><div class="row"><div class="col-md-6 col-lg-5 col-xxl-6 offset-lg-1 offset-xxl-0"><h2 class="display-6 fw-bold pb-md-4" style="color: #282846;">A UI/UX designer specializing in&nbsp;<span class="underline">HCI</span></h2></div><div class="col-md-6 col-xxl-6 offset-xxl-0 d-md-flex d-lg-flex d-xxl-flex align-items-md-center align-items-lg-center align-items-xxl-start pt-4"><p class="text-start text-muted mb-4" id="des">Accomplished UI/UX completed user testing, and incorporated feedback into new iterations while keeping&nbsp; consistent user experience.</p></div></div><div class="row gy-4 gy-md-0"><div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center"><div><div class="row gy-2 row-cols-1 row-cols-sm-2"><div class="col-lg-5 col-xl-5 col-xxl-6 offset-lg-1 offset-xxl-0 text-center text-md-start d-flex d-xxl-flex flex-column align-items-xxl-center"><div class="d-flex flex-column justify-content-center align-items-start justify-content-md-start align-items-md-start align-items-xl-start align-items-xxl-start"><img class="img-fluid" src="assets/img/Group%20159.webp"><h5 class="fw-bold mb-0 ms-2">Interaction Design&nbsp;</h5><p class="text-start text-muted my-3">Dedicated to creating inviting and user-friendly interfaces.</p></div></div><div class="col-lg-5 col-xl-5 col-xxl-6 text-center text-md-start"><div class="d-flex flex-column justify-content-center align-items-start justify-content-md-start align-items-md-start align-items-xl-start align-items-xxl-start"><img class="img-fluid" src="assets/img/Group%20170.webp"><h5 class="fw-bold mb-0 ms-2">Extended Reality</h5><p class="text-start text-muted my-3">Experience in AR/MR/XR application design.</p></div></div><div class="col-md-6 col-lg-5 col-xxl-6 offset-lg-1 offset-xxl-0 text-center text-md-start"><div class="d-flex flex-column justify-content-center align-items-start justify-content-md-start align-items-md-start align-items-xl-start"><img class="img-fluid" src="assets/img/Group%20174.webp" width="476" height="317"><h5 class="fw-bold mb-0 ms-2">User Research<br></h5><p class="text-start text-muted my-3">Analysing and implementing of user-centric design principles.</p></div></div><div class="col-lg-5 col-xxl-6 offset-lg-0 offset-xxl-0 text-center text-md-start"><div class="d-flex flex-column justify-content-center align-items-start justify-content-md-start align-items-md-start align-items-xl-start"><img class="img-fluid" src="assets/img/Group%20160.webp" width="476" height="317"><h5 class="fw-bold mb-0 ms-2">Effective UI/UX&nbsp;design<br></h5><p class="text-start text-muted my-3">Dedicated to creating inviting and to high quality interfaces </p></div></div></div></div></div></div></div></section><section><div class="container py-4 py-xl-5"><div class="row gy-4 gy-md-0"><div class="col-sm-12 col-md-6 col-lg-7 col-xl-7 col-xxl-7 offset-sm-0 offset-lg-0 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center"><img class="img-fluid profile" src="assets/img/2.webp" width="327" height="218"></div><div class="col text-start d-sm-flex justify-content-sm-center"><div class="d-flex flex-column align-items-center" style="max-width: 450px;"><h3 class="fw-bold text-center d-flex justify-content-center pb-md-4"><span class="underline">About Me</span></h3><div class="row gy-4 row-cols-2 row-cols-md-2" style="margin-top: 0px;"><div class="col-7 col-lg-7 col-xl-7 col-xxl-7"><div><p class="fw-normal text-muted" style="margin-bottom: 0px;">Name</p><span class="fs-2 fw-bold text-primary bg-warning">Tanishq Bafna</span></div></div><div class="col-7 col-sm-5 col-lg-5 col-xl-5 col-xxl-5"><div><p class="fw-normal text-muted" style="margin: 0px;">UI/UX Experience&nbsp;</p><span class="fs-2 fw-bold text-primary bg-warning">2+ years</span></div></div><div class="col-10 col-sm-9 col-md-11 col-xxl-10"><div><p class="fw-normal text-muted" style="margin-bottom: 0px;">Education</p><span class="fs-2 fw-bold text-primary bg-warning">Masters in Compter Science (Virginia Tech)</span></div></div></div></div></div></div></div></section><section id="FAQ" class="py-4 py-xl-5 mb-5"><div class="container"><div class="row mb-2"><div class="col-md-9 col-xl-6 text-center mx-auto"><h2 class="display-6 fw-bold mb-5"><span class="pb-3 underline">FAQ<br></span></h2><p class="text-center text-muted mb-5">&nbsp;Find the answers to some of the most common questions</p></div></div><div class="row mb-2"><div class="col-md-10 col-lg-10 col-xl-10 col-xxl-12 mx-auto"><div class="accordion text-muted" role="tablist" id="accordion-1"><div class="accordion-item"><h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1">What is my Education Background</button></h2><div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1"><div class="accordion-body"><p><span style="color: rgb(0, 128, 128);">Virginia Tech, Virginia (Aug 2021 - Dec 2022)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Masters of Engineering in Computer Science, Current GPA - 3.81.</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Associated with the Centre&nbsp;for Human-Computer Interaction.</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Courses: Human-Factor &amp; System Design&nbsp;Usability Engineering, Models and theories in HCI.</span><br><br><span style="color: rgb(0, 128, 128);">Vellore Institute of Technology, India (Aug 2017 - Aug 2021)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Bachelor of Technology in Computer Science, CGPA - 7.94/10 (WES - 3.750).</span><br></p></div></div></div><div class="accordion-item"><h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">My Professional Experience in the Field of UX</button></h2><div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1"><div class="accordion-body"><p class="text-start mb-0"><span style="color: rgb(204, 51, 63);">Avocademy Inc. - Remote, USA (01/2023)&nbsp;</span><br><span style="font-weight: normal !important;">UI/UX Design Course Content Instructor</span><br><span style="font-weight: normal !important;">Crafted a comprehensive educational journey incorporating videos, written content &amp; activities to help teach subject expertise in an engaging manner.</span><br><span style="font-weight: normal !important;">Collaborated with project specialists to curate multi-dimensional learning experiences enriched with external resources.</span><br><span style="font-weight: normal !important;">Authored 20+ hours of cutting-edge UX/UI design course content, awarding 10+ innovative certificates and badges to students upon successful completion.</span><br><br><span style="color: rgb(0, 128, 128);">CX Studios, Texas, USA (06/2022 - 08/2022)</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">UX Designer. </span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Worked on a complete Digital Customer Experience Lifecycle with two key focus areas:&nbsp;</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Employing design thinking skills for clients in the healthcare industry &amp; Evaluated insights to design a website for CX Studios.</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Created Wireframes &amp; Prototypes for the product. Worked with Design Lead to produce initial Information architecture and orchestrated user work roles for the product.</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Interacted with Analytics and Sales teams to identify user needs for the Product.</span><br><br><span style="color: rgb(0, 128, 128);">Centillion, Mumbai, India (07/2020 - 11/2020)</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">UI/UX Designer.</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Identified user concerns in interfaces, recommended design changes and iterative updates, supported research, usability, and A/B testing to create two unique prototypes.&nbsp;</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Deployed Google Analytics, analysed&nbsp;websites and other digital content, and upgraded channels to increase average app engagement time by 2x.&nbsp;</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Conducted testing with 10+ participants on UserTesting.com; synthesized and designed against findings from User Research.</span><br><br><span style="color: rgb(0, 128, 128);">Aiesec, Beau Bassin, Plaines Wilhems District, Mauritius (06/2019 - 09/2019)</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Web Design Intern. </span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Supervised web designing and front-end development and functions.&nbsp;</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Executed a performance reporting template. Led a transition to a paperless practice by implementing a faster, safer, accurate classroom system, receding office overhead by 15%.&nbsp;</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Collaborated with product and marketing teams to redesign the mobile onboarding process, boosting retention and user experience.</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Redesigned new user sign-up form and flow, driving a 10% increase. Implemented full-length operation and presented superior UI/UX design and visual components.</span><br><br><span style="color: rgb(0, 128, 128);">Soroptimist International - Aiesec, Rose-Hill, Mauritius (06/2019 - 08/2019)</span><br><span style="font-weight: normal !important;">Global Student Volunteer.</span><br><span style="font-weight: normal !important;">Counselled the NGO in providing two daily sessions to contribute and help all elderly &amp; youth.</span><br><span style="font-weight: normal !important;">Guided youth, showing youth a future of tomorrow! Interacted, engaged, and empowered elderly.&nbsp;</span><br><span style="font-weight: normal !important;">Imparted IT skills, aid classes, and soft skills training to 7-20 year-olds. Managed new potential structures and projects for growth of the NGO.&nbsp;</span><br><span style="font-weight: normal !important;">Coordinated in planning 10+ future projects to engage young and elderly groups, helping with logistics and administrative departments of the NGO by assisting in Accounting.&nbsp;</span></p></div></div></div><div class="accordion-item"><h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">My Awards and Certifications in UX</button></h2><div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1"><div class="accordion-body"><p class="mb-0"><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Build Wireframes and Low-Fidelity Prototypes -</span><span style="color: rgb(0, 128, 128);"> Google Career Certificates </span><span style="font-weight: normal !important; color: rgb(40, 40, 70);">- (06/2022)</span><br><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Start the UX Design Process: Empathize, Define, and Ideate - </span><span style="color: rgb(0, 128, 128);">Google Career Certificates </span><span style="font-weight: normal !important; color: rgb(40, 40, 70);">- (05/2022)</span><br><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Google Certification Foundations of User Experience (UX) Design - </span><span style="color: rgb(0, 128, 128);">Google Career Certificates</span><span style="font-weight: normal !important; color: rgb(40, 40, 70);"> - (01/2022)</span><br><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Google Certification in Introduction to Augmented Reality and ARCore - </span><span style="color: rgb(0, 128, 128);">Google </span><span style="font-weight: normal !important; color: rgb(40, 40, 70);">- (02/2021)</span><br><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Advanced UI/UX Designer Certification - </span><span style="color: rgb(0, 128, 128);">ITLH&nbsp; </span><span style="font-weight: normal !important; color: rgb(40, 40, 70);">- (08/2020)</span><br><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Hackathon </span><span style="color: rgb(0, 128, 128);">(Smart Web Application Development - Ethnus)</span><span style="font-weight: normal !important; color: rgb(40, 40, 70);"> - (10/2019)</span><br><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Hack4cause </span><span style="color: rgb(0, 128, 128);">(VIT SCOPE &amp; IEEE - Society On Social Implications Of Technology.)</span><span style="font-weight: normal !important; color: rgb(40, 40, 70);"> - (03/2018)</span><br></p></div></div></div></div></div></div></div></section><footer class="text-center d-inline d-lg-flex d-xxl-flex justify-content-lg-center justify-content-xl-start py-4"><div class="container"><div class="row row-cols-1 row-cols-lg-3 d-flex d-sm-flex d-md-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-xxl-center"><div class="col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-xxl-flex justify-content-xxl-center"><p class="text-center text-muted d-xxl-flex justify-content-xxl-center my-2">Copyright&nbsp;© 2023 TanishqBafna</p></div><div class="col-10 col-sm-11 col-md-8 col-lg-6 col-xl-6 col-xxl-7 offset-1 d-flex justify-content-center" style="border-style: none;margin-left: 0px;"><ul class="nav nav-tabs d-flex justify-content-center" style="border-style: none;"><li class="nav-item"><a class="nav-link" href="work.html" style="border-style: none;color: #282846;">My work</a></li><li class="nav-item" style="border-style: none;"><a class="nav-link" href="faq.html" style="border-style: none;color: #282846;">FAQ's&nbsp;</a></li><li class="nav-item"><a class="nav-link" href="testimonials.html" style="border-style: none;color: #282846;">Testimonials</a></li><li class="nav-item"><a class="nav-link" href="contact.html" style="border-style: none;color: #282846;">Contact</a></li><li class="nav-item"></li></ul></div></div></div></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script><script src="assets/js/smart-forms.min.js"></script><script src="assets/js/bs-init.js"></script><script src="assets/js/Animation-Final.js"></script><script src="assets/js/Scroll.js"></script></body></html>
+				</div></h1>
+                        <p class="fs-5 text-center text-muted mb-5" data-aos="fade-down" data-aos-duration="450" id="herop"><span style="font-weight: normal !important; background-color: transparent;">Product Designer&nbsp;</span><span style="font-weight: normal !important;">skilled&nbsp;</span><span style="font-weight: normal !important; background-color: transparent;">in harmonizing innovation, functionality, aesthetics crafting immersive user experiences.&nbsp;</span><span style="font-weight: normal !important;">A results-driven UX Designer&nbsp;adept at&nbsp;data-driven design improvements, effective collaborator.&nbsp;</span><span style="font-weight: normal !important; background-color: transparent;">Poised to elevate UX transforming Product appeal.</span></p>
+                        <div data-aos="fade-down" data-aos-duration="500" style="margin-top: -20px;margin-bottom: 5px;"><a class="btn btn-outline-primary btn-lg my-projects" role="button" href="resume.pdf" style="width: 140px;">Resume</a><a class="btn btn-primary btn-lg me-2" role="button" href="About%20me.html" style="margin-left: calc(1rem + 1.5vw);width: 145px;">About me</a></div>
+                    </div>
+                    <div class="text-start d-flex d-sm-flex flex-row justify-content-center justify-content-sm-center social-icons" data-aos="fade-down" data-aos-duration="550" style="padding-top: 10px;padding-bottom: 20px;background-color: rgba(255,255,255,0);"><a class="d-xxl-flex justify-content-xxl-center" href="https://www.linkedin.com/in/tanishqbafna/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin" style="border-style: none;">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                            </svg></a><a href="https://github.com/TANISHQBAFNA" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github" style="border-style: none;">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg></a><a href="https://www.behance.net/tanishqbafna" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-behance" style="border-style: none;">
+                                <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z"></path>
+                            </svg></a></div>
+                </div>
+                <div class="col-12 col-sm-11 col-md-12 col-lg-6 col-xl-7 col-xxl-6 mx-auto" data-aos="zoom-in" data-aos-duration="600" id="hero-img" style="margin-top: 20px;background: url(&quot;assets/img/Group%20172.webp&quot;) center / contain no-repeat;"><img class="img-fluid pulse animated infinite adobe logo-img" src="assets/img/icons8-adobe-96.webp"><img class="img-fluid pulse animated infinite figma logo-img" src="assets/img/icons8-figma-48.webp"><img class="img-fluid" data-aos="fade-down" data-aos-duration="650" src="assets/img/Group%20138.webp" width="643" height="484"></div>
+            </div><span class="d-flex d-md-flex d-xxl-flex justify-content-center justify-content-md-center justify-content-xxl-center animated bounce" style="font-size: 48px;margin-top: 71px;margin-bottom: -68px;">👇🏼</span>
+        </div>
+    </header>
+    <section class="d-md-flex justify-content-md-center" id="projects">
+        <div class="container d-flex d-sm-flex flex-column justify-content-sm-center py-4 py-xl-5">
+            <div class="row d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xxl-flex justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center justify-content-xxl-center">
+                <div class="col-sm-11 col-md-10 col-lg-8 col-xl-7 col-xxl-6 offset-sm-0 offset-lg-0 offset-xl-0 offset-xxl-0 d-lg-flex justify-content-lg-center">
+                    <h3 class="display-6 fw-normal text-center pb-md-4"><span style="color: rgb(40, 40, 70);">Projects and User research in the field of&nbsp;</span><span class="underline" style="color: #00a0a0;">UX &amp; HCI</span></h3>
+                </div>
+            </div>
+            <div id="tabs">
+                <ul class="nav nav-tabs d-flex d-md-flex d-xxl-flex justify-content-center justify-content-md-center justify-content-xxl-center" role="tablist" style="border-bottom-style: none;">
+                    <li class="nav-item" role="presentation"><a class="nav-link active d-flex justify-content-center align-items-center tab-link" role="tab" data-bs-toggle="tab" id="tab-all" href="#tab-5">All&nbsp;</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link d-flex justify-content-center align-items-center tab-link" role="tab" data-bs-toggle="tab" id="tab-uiux" href="#tab-1">UI/UX Design&nbsp;</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link d-flex justify-content-center align-items-center tab-link" role="tab" data-bs-toggle="tab" id="tab-ur" href="#tab-2">User Research&nbsp;</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link d-flex justify-content-center align-items-center tab-link" role="tab" data-bs-toggle="tab" id="tab-ut" href="#tab-3">Usability Testing&nbsp;</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link d-flex justify-content-center align-items-center tab-link" role="tab" data-bs-toggle="tab" id="tab-bba" href="#tab-6"> Brand/Business Alignment&nbsp;</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" role="tabpanel" id="tab-5">
+                        <div class="row gy-4 row-cols-md-2 row-cols-xl-3" id="my-projects-2">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/x2a80heivmrpikqh8hde.gif" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/O7LEsoXE-enhancing-the-saa-s-product-and-driving-growth-at-fruitful-inc" target="_blank">
+                                                <h4 class="fw-bold">Enhancing the SaaS product and Driving Growth at Fruitful Inc.</h4>
+                                            </a><span class="year" style="display: block;">2023</span>
+                                            <p class="text-muted details">User-Centric Design | Usability Testing | Prototyping |&nbsp;Business Alignment |&nbsp;Problem Solving |&nbsp;Stakeholder Management</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/O7LEsoXE-enhancing-the-saa-s-product-and-driving-growth-at-fruitful-inc" target="_blank">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0 d-md-flex justify-content-md-center">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="film-4" src="assets/img/clipboard-image-2.webp" width="233" height="155"><a href="Collaperture.html">
+                                                <h4 class="fw-bold">Collaperture - Film Production App</h4>
+                                            </a><span class="year" style="display: block;">2022</span>
+                                            <p class="text-muted details">Usability Engineering | Prototyping | User Research | User Testing</p><a class="fw-bold link-primary" href="Collaperture.html"><span style="color: rgb(40, 40, 70);">Learn more&nbsp;</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/Screenshot%202023-08-08%20210403.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/37NAbZgL-transforming-healthcare-customer-experience-at-cx-studios" target="_blank">
+                                                <h4 class="fw-bold">Transforming Healthcare Customer Experience at CX Studios</h4>
+                                            </a><span class="year" style="display: block;">2022</span>
+                                            <p class="text-muted details">UI/UX Design | Usability Testing |&nbsp;Design Thinking |&nbsp;Business Alignment</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/37NAbZgL-transforming-healthcare-customer-experience-at-cx-studios" target="_blank">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/iPad.webp" width="594" height="396" style="object-fit: cover;"><a href="Aurel.html">
+                                                <h4 class="fw-bold">Aurel - Augmented Reality App<br></h4>
+                                            </a><span class="year" style="display: block;">2021</span>
+                                            <p class="text-muted details">Interaction Design | Research | User Experience | Development</p><a class="fw-bold link-primary" href="Aurel.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="estate-4" src="assets/img/clipboard-image-1.webp" width="594" height="396"><a href="Real-estate-Brand.html">
+                                                <h4 class="fw-bold">Belle Monde - Real Estate Brand<br></h4>
+                                            </a><span class="year" style="display: block;">2020</span>
+                                            <p class="text-muted details">Interaction Design | Research | Prototyping | Branding | UX Design</p><a class="fw-bold link-primary" href="Real-estate-Brand.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="salon-4" src="assets/img/clipboard-image-10.webp" width="594" height="396" style="object-fit: cover;"><a href="Aqua-Beauty.html">
+                                                <h4 class="fw-bold">Aqua Beauty - New Salon App<br></h4>
+                                            </a><span class="year" style="display: block;">2020</span>
+                                            <p class="text-muted details">Interaction Design | Visual Design | Prototyping | Branding | UX Design</p><a class="fw-bold link-primary" href="Aqua-Beauty.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/clipboard-image.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/bULPesc3-banking-app-redesign-on-behance">
+                                                <h4 class="fw-bold">Banking App Redesign on Behance</h4>
+                                            </a><span class="year" style="display: block;">2019</span>
+                                            <p class="text-muted details">UI Design| Branding | Color Theory | UX Design | Prototyping</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/bULPesc3-banking-app-redesign-on-behance">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/clipboard-image-1-1.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">
+                                                <h4 class="fw-bold">DueFi - Company Evaluation and made easy</h4>
+                                            </a><span class="year" style="display: block;">2019</span>
+                                            <p class="text-muted details">UI/UX Design | Design Thinking | Business Alignment</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/clipboard-image-2-1.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">
+                                                <h4 class="fw-bold">Rumbling Engines - Podcast for Hot Rod Fanatics</h4>
+                                            </a><span class="year" style="display: block;">2019</span>
+                                            <p class="text-muted details">UI Design | Design Thinking</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/clipboard-image-3.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">
+                                                <h4 class="fw-bold">Nature Secrets - Chemical-free cosmetics, no more a secret</h4>
+                                            </a><span class="year" style="display: block;">2019</span>
+                                            <p class="text-muted details">UI Design | Design Thinking | E-commerce</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/Photo.webp" width="594" height="396" style="object-fit: cover;"><a href="Aiesec.html">
+                                                <h4 class="fw-bold">Soroptimist International - Aiesec, Mauritius - Global Student Volunteer.<br></h4>
+                                            </a><span class="year" style="display: block;">2019</span>
+                                            <p class="text-muted details">Empowerment | User Research | Teaching | Outreach | Global Volunteer<br></p><a class="fw-bold link-primary" href="Aiesec.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-1">
+                        <div class="row gy-4 row-cols-md-2 row-cols-xl-3" id="my-projects-3">
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0 d-md-flex justify-content-md-center">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="film-2" src="assets/img/clipboard-image-2.webp" width="233" height="155"><a href="Collaperture.html">
+                                                <h4 class="fw-bold">Collaperture - Film Production App</h4>
+                                            </a><span class="year" style="display: block;">2022</span>
+                                            <p class="text-muted details">Usability Engineering | Prototyping | User Research | User Testing</p><a class="fw-bold link-primary" href="Collaperture.html"><span style="color: rgb(40, 40, 70);">Learn more&nbsp;</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/Screenshot%202023-08-08%20210403.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/37NAbZgL-transforming-healthcare-customer-experience-at-cx-studios" target="_blank">
+                                                <h4 class="fw-bold">Transforming Healthcare Customer Experience at CX Studios</h4>
+                                            </a><span class="year" style="display: block;">2022</span>
+                                            <p class="text-muted details">UI/UX Design | Usability Testing |&nbsp;Design Thinking |&nbsp;Business Alignment</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/37NAbZgL-transforming-healthcare-customer-experience-at-cx-studios" target="_blank">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/iPad.webp" width="594" height="396" style="object-fit: cover;"><a href="Aurel.html">
+                                                <h4 class="fw-bold">Aurel - Augmented Reality App<br></h4>
+                                            </a><span class="year" style="display: block;">2021</span>
+                                            <p class="text-muted details">Interaction Design | Research | User Experience | Development</p><a class="fw-bold link-primary" href="Aurel.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="estate-2" src="assets/img/clipboard-image-1.webp" width="594" height="396"><a href="Real-estate-Brand.html">
+                                                <h4 class="fw-bold">Belle Monde - Real Estate Brand<br></h4>
+                                            </a><span class="year" style="display: block;">2020</span>
+                                            <p class="text-muted details">Interaction Design | Research | Prototyping | Branding | UX Design</p><a class="fw-bold link-primary" href="Real-estate-Brand.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="salon-2" src="assets/img/clipboard-image-10.webp" width="594" height="396" style="object-fit: cover;"><a href="Aqua-Beauty.html">
+                                                <h4 class="fw-bold">Aqua Beauty - New Salon App<br></h4>
+                                            </a><span class="year" style="display: block;">2020</span>
+                                            <p class="text-muted details">Interaction Design | Visual Design | Prototyping | Branding | UX Design</p><a class="fw-bold link-primary" href="Aqua-Beauty.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/clipboard-image.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/bULPesc3-banking-app-redesign-on-behance">
+                                                <h4 class="fw-bold">Banking App Redesign on Behance</h4>
+                                            </a><span class="year" style="display: block;">2019</span>
+                                            <p class="text-muted details">UI Design| Branding | Color Theory | UX Design | Prototyping</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/bULPesc3-banking-app-redesign-on-behance">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/clipboard-image-1-1.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">
+                                                <h4 class="fw-bold">DueFi - Company Evaluation and made easy</h4>
+                                            </a><span class="year" style="display: block;">2019</span>
+                                            <p class="text-muted details">UI/UX Design | Design Thinking | Business Alignment</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/clipboard-image-2-1.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">
+                                                <h4 class="fw-bold">Rumbling Engines - Podcast for Hot Rod Fanatics</h4>
+                                            </a><span class="year" style="display: block;">2019</span>
+                                            <p class="text-muted details">UI Design | Design Thinking</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/clipboard-image-3.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">
+                                                <h4 class="fw-bold">Nature Secrets - Chemical-free cosmetics, no more a secret</h4>
+                                            </a><span class="year" style="display: block;">2019</span>
+                                            <p class="text-muted details">UI Design | Design Thinking | E-commerce</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-2">
+                        <div class="row gy-4 row-cols-md-2 row-cols-xl-3" id="my-projects-4">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/x2a80heivmrpikqh8hde.gif" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/O7LEsoXE-enhancing-the-saa-s-product-and-driving-growth-at-fruitful-inc" target="_blank">
+                                                <h4 class="fw-bold">Enhancing the SaaS product and Driving Growth at Fruitful Inc.</h4>
+                                            </a><span class="year" style="display: block;">2023</span>
+                                            <p class="text-muted details">User-Centric Design | Usability Testing |&nbsp;Business Alignment |&nbsp;Problem Solving |&nbsp;Stakeholder Management</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/O7LEsoXE-enhancing-the-saa-s-product-and-driving-growth-at-fruitful-inc" target="_blank">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0 d-md-flex justify-content-md-center">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="film-5" src="assets/img/clipboard-image-2.webp" width="233" height="155"><a href="Collaperture.html">
+                                                <h4 class="fw-bold">Collaperture - Film Production App</h4>
+                                            </a><span class="year" style="display: block;">2022</span>
+                                            <p class="text-muted details">Usability Engineering | Prototyping | User Research | User Testing</p><a class="fw-bold link-primary" href="Collaperture.html"><span style="color: rgb(40, 40, 70);">Learn more&nbsp;</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/Screenshot%202023-08-08%20210403.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/37NAbZgL-transforming-healthcare-customer-experience-at-cx-studios" target="_blank">
+                                                <h4 class="fw-bold">Transforming Healthcare Customer Experience at CX Studios</h4>
+                                            </a><span class="year" style="display: block;">2022</span>
+                                            <p class="text-muted details">UI/UX Design | Usability Testing |&nbsp;Design Thinking |&nbsp;Business Alignment</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/37NAbZgL-transforming-healthcare-customer-experience-at-cx-studios" target="_blank">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/iPad.webp" width="594" height="396" style="object-fit: cover;"><a href="Aurel.html">
+                                                <h4 class="fw-bold">Aurel - Augmented Reality App<br></h4>
+                                            </a><span class="year" style="display: block;">2021</span>
+                                            <p class="text-muted details">Interaction Design | Research | User Experience | Development</p><a class="fw-bold link-primary" href="Aurel.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="estate-5" src="assets/img/clipboard-image-1.webp" width="594" height="396"><a href="Real-estate-Brand.html">
+                                                <h4 class="fw-bold">Belle Monde - Real Estate Brand<br></h4>
+                                            </a><span class="year" style="display: block;">2020</span>
+                                            <p class="text-muted details">Interaction Design | Research | Prototyping | Branding | UX Design</p><a class="fw-bold link-primary" href="Real-estate-Brand.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="salon-5" src="assets/img/clipboard-image-10.webp" width="594" height="396" style="object-fit: cover;"><a href="Aqua-Beauty.html">
+                                                <h4 class="fw-bold">Aqua Beauty - New Salon App<br></h4>
+                                            </a><span class="year" style="display: block;">2020</span>
+                                            <p class="text-muted details">Interaction Design | Visual Design | Prototyping | Branding | UX Design</p><a class="fw-bold link-primary" href="Aqua-Beauty.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/Photo.webp" width="594" height="396" style="object-fit: cover;"><a href="Aiesec.html">
+                                                <h4 class="fw-bold">Soroptimist International - Aiesec, Mauritius - Global Student Volunteer.<br></h4>
+                                            </a><span class="year" style="display: block;">2019</span>
+                                            <p class="text-muted details">Empowerment | User Research | Teaching | Outreach | Global Volunteer<br></p><a class="fw-bold link-primary" href="Aiesec.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-3">
+                        <div class="row gy-4 row-cols-md-2 row-cols-xl-3" id="my-projects-1">
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0 d-md-flex justify-content-md-center">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="film-3" src="assets/img/clipboard-image-2.webp" width="233" height="155"><a href="Collaperture.html">
+                                                <h4 class="fw-bold">Collaperture - Film Production App</h4>
+                                            </a><span class="year" style="display: block;">2022</span>
+                                            <p class="text-muted details">Usability Engineering | Prototyping | User Research | User Testing</p><a class="fw-bold link-primary" href="Collaperture.html"><span style="color: rgb(40, 40, 70);">Learn more&nbsp;</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/x2a80heivmrpikqh8hde.gif" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/O7LEsoXE-enhancing-the-saa-s-product-and-driving-growth-at-fruitful-inc" target="_blank">
+                                                <h4 class="fw-bold">Enhancing the SaaS product and Driving Growth at Fruitful Inc.</h4>
+                                            </a><span class="year" style="display: block;">2023</span>
+                                            <p class="text-muted details">User-Centric Design | Usability Testing | Prototyping |&nbsp;Business Alignment |&nbsp;Problem Solving |&nbsp;Stakeholder Management</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/O7LEsoXE-enhancing-the-saa-s-product-and-driving-growth-at-fruitful-inc" target="_blank">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/Screenshot%202023-08-08%20210403.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/37NAbZgL-transforming-healthcare-customer-experience-at-cx-studios" target="_blank">
+                                                <h4 class="fw-bold">Transforming Healthcare Customer Experience at CX Studios</h4>
+                                            </a><span class="year" style="display: block;">2022</span>
+                                            <p class="text-muted details">UI/UX Design | Usability Testing |&nbsp;Design Thinking |&nbsp;Business Alignment</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/37NAbZgL-transforming-healthcare-customer-experience-at-cx-studios" target="_blank">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/iPad.webp" width="594" height="396" style="object-fit: cover;"><a href="Aurel.html">
+                                                <h4 class="fw-bold">Aurel - Augmented Reality App<br></h4>
+                                            </a><span class="year" style="display: block;">2021</span>
+                                            <p class="text-muted details">Interaction Design | Research | User Experience | Development</p><a class="fw-bold link-primary" href="Aurel.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="estate-3" src="assets/img/clipboard-image-1.webp" width="594" height="396"><a href="Real-estate-Brand.html">
+                                                <h4 class="fw-bold">Belle Monde - Real Estate Brand<br></h4>
+                                            </a><span class="year" style="display: block;">2020</span>
+                                            <p class="text-muted details">Interaction Design | Research | Prototyping | Branding | UX Design</p><a class="fw-bold link-primary" href="Real-estate-Brand.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="salon-3" src="assets/img/clipboard-image-10.webp" width="594" height="396" style="object-fit: cover;"><a href="Aqua-Beauty.html">
+                                                <h4 class="fw-bold">Aqua Beauty - New Salon App<br></h4>
+                                            </a><span class="year" style="display: block;">2020</span>
+                                            <p class="text-muted details">Interaction Design | Visual Design | Prototyping | Branding | UX Design</p><a class="fw-bold link-primary" href="Aqua-Beauty.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-6">
+                        <div class="row gy-4 row-cols-md-2 row-cols-xl-3" id="my-projects-5">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/x2a80heivmrpikqh8hde.gif" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/O7LEsoXE-enhancing-the-saa-s-product-and-driving-growth-at-fruitful-inc" target="_blank">
+                                                <h4 class="fw-bold">Enhancing the SaaS product and Driving Growth at Fruitful Inc.</h4>
+                                            </a><span class="year" style="display: block;">2023</span>
+                                            <p class="text-muted details">User-Centric Design | Usability Testing | Prototyping |&nbsp;Business Alignment |&nbsp;Problem Solving |&nbsp;Stakeholder Management</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/O7LEsoXE-enhancing-the-saa-s-product-and-driving-growth-at-fruitful-inc" target="_blank">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/Screenshot%202023-08-08%20210403.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/37NAbZgL-transforming-healthcare-customer-experience-at-cx-studios" target="_blank">
+                                                <h4 class="fw-bold">Transforming Healthcare Customer Experience at CX Studios</h4>
+                                            </a><span class="year" style="display: block;">2022</span>
+                                            <p class="text-muted details">UI/UX Design | Usability Testing |&nbsp;Design Thinking |&nbsp;Business Alignment</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/37NAbZgL-transforming-healthcare-customer-experience-at-cx-studios" target="_blank">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="estate-1" src="assets/img/clipboard-image-1.webp" width="594" height="396"><a href="Real-estate-Brand.html">
+                                                <h4 class="fw-bold">Belle Monde - Real Estate Brand<br></h4>
+                                            </a><span class="year" style="display: block;">2020</span>
+                                            <p class="text-muted details">Interaction Design | Research | Prototyping | Branding | UX Design</p><a class="fw-bold link-primary" href="Real-estate-Brand.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" id="salon-1" src="assets/img/clipboard-image-10.webp" width="594" height="396" style="object-fit: cover;"><a href="Aqua-Beauty.html">
+                                                <h4 class="fw-bold">Aqua Beauty - New Salon App<br></h4>
+                                            </a><span class="year" style="display: block;">2020</span>
+                                            <p class="text-muted details">Interaction Design | Visual Design | Prototyping | Branding | UX Design</p><a class="fw-bold link-primary" href="Aqua-Beauty.html">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/clipboard-image.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/bULPesc3-banking-app-redesign-on-behance">
+                                                <h4 class="fw-bold">Banking App Redesign on Behance</h4>
+                                            </a><span class="year" style="display: block;">2019</span>
+                                            <p class="text-muted details">UI Design| Branding | Color Theory | UX Design | Prototyping</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/bULPesc3-banking-app-redesign-on-behance">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/clipboard-image-1-1.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">
+                                                <h4 class="fw-bold">DueFi - Company Evaluation and made easy</h4>
+                                            </a><span class="year" style="display: block;">2019</span>
+                                            <p class="text-muted details">UI/UX Design | Design Thinking | Business Alignment</p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-md-0 offset-lg-0 offset-xl-0 offset-xxl-0">
+                                <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                    <div class="card-body">
+                                        <div><img class="img-fluid projects" src="assets/img/clipboard-image-3.webp" width="594" height="396" style="object-fit: cover;"><a href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">
+                                                <h4 class="fw-bold">Nature Secrets - Chemical-free cosmetics, no more a secret</h4>
+                                            </a><span class="year" style="display: block;">2019</span>
+                                            <p class="text-muted details">UI Design | Design Thinking | E-commerce |&nbsp;<br><strong>Business Alignment</strong><br><br></p><a class="fw-bold link-primary" href="https://tanishqbafna.contra.com/p/F7grZZlL-i-m-tanishq-a-ux-visual-and-interaction-designer">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-4">
+                        <p>Tab content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container d-flex d-xxl-flex flex-column justify-content-xxl-center align-items-xxl-center">
+            <div class="row">
+                <div class="col-10 col-sm-8 col-md-4 col-lg-3 col-xl-4 col-xxl-4 offset-1 offset-sm-1 offset-md-0 offset-lg-1 offset-xl-1 offset-xxl-1 d-md-flex d-xxl-flex justify-content-md-center align-items-md-center align-items-xxl-center mb-5"><img class="rounded img-fluid" src="assets/img/7%20Social%20Media.svg" width="373" height="249"></div>
+                <div class="col-sm-7 col-md-8 col-lg-7 col-xl-7 col-xxl-7 offset-lg-1 offset-xl-0 offset-xxl-0 d-md-flex align-items-md-end align-items-lg-center mb-5">
+                    <div class="row gy-4 row-cols-1 row-cols-md-2 flex-grow-1">
+                        <div class="col-xl-6 col-xxl-6 offset-xxl-0">
+                            <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                <div class="card-body">
+                                    <div><a href="Dark Pattern.pdf" target="_blank">
+                                            <h4 class="fw-bold">Dark Patterns in UX. Is it Ethical?</h4>
+                                        </a>
+                                        <p class="text-muted d-none d-xl-block">A User Survey and Research on how users react to Dark patterns&nbsp;</p><a class="fw-bold link-primary" href="Dark Pattern.pdf" style="display: block;" target="_blank">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                <line x1="15" y1="8" x2="19" y2="12"></line>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                <div class="card-body">
+                                    <div>
+                                        <h4 class="fw-bold">Crosswalk Navigation System<br></h4><span class="year" style="display: block;"></span>
+                                        <p class="text-muted d-none d-xl-block">A Human Factors Project on the influence of haptics and sound on user while crossing roads</p><a class="fw-bold link-primary" href="#" style="display: block;">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                <line x1="15" y1="8" x2="19" y2="12"></line>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 col-md-8 col-lg-8 col-xl-7 offset-lg-1 offset-xl-1 offset-xxl-1 d-md-flex align-items-md-end align-items-lg-center mb-5">
+                    <div class="row g-0 row-cols-1 row-cols-md-2 flex-grow-1">
+                        <div class="col-lg-6 col-xl-6 col-xxl-6 offset-xxl-1">
+                            <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                <div class="card-body">
+                                    <div><a href="https://infoviz-cs5764.web.app/" target="_blank">
+                                            <h4 class="fw-bold">COVID-19&nbsp;"THE CHALLENGE"<br></h4>
+                                        </a>
+                                        <p class="text-muted d-none d-xl-block">Project on creating Data Visualisation using D3.js</p><a class="fw-bold link-primary" href="https://infoviz-cs5764.web.app/" style="display: block;" target="_blank">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                <line x1="15" y1="8" x2="19" y2="12"></line>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xxl-5 offset-xxl-0">
+                            <div class="card border-light border-1 d-flex justify-content-center p-4">
+                                <div class="card-body">
+                                    <div>
+                                        <h4 class="fw-bold">More Projects&nbsp;</h4>
+                                        <p class="text-muted d-none d-xl-block">You can find more projects on Behance</p><a class="fw-bold link-primary" href="https://www.behance.net/tanishqbafna" style="display: block;" target="_blank">Learn more&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right fs-3">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <line x1="15" y1="16" x2="19" y2="12"></line>
+                                                <line x1="15" y1="8" x2="19" y2="12"></line>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-sm-8 col-md-4 col-lg-3 col-xl-4 col-xxl-4 offset-4 offset-sm-11 offset-lg-4 offset-xl-1 offset-xxl-2 d-md-flex d-xxl-flex order-first justify-content-md-center align-items-md-center order-md-last align-items-xxl-center mb-5" style="margin-left: 0px;"><img class="rounded img-fluid d-md-flex align-items-md-center" src="assets/img/Group%20138.webp" style="transform: perspective(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);" width="500" height="333"></div>
+            </div>
+        </div>
+    </section>
+    <section id="FAQ" class="py-4 py-xl-5 mb-5">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-md-9 col-xl-6 text-center mx-auto">
+                    <h2 class="display-6 fw-bold mb-5"><span class="pb-3 underline">FAQ<br></span></h2>
+                    <p class="text-center text-muted mb-5">&nbsp;Find the answers to some of the most common questions</p>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-10 col-lg-10 col-xl-10 col-xxl-9 mx-auto">
+                    <div class="accordion text-muted" role="tablist" id="accordion-1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1">What is my Education Background</button></h2>
+                            <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div class="accordion-body">
+                                    <p><span style="color: rgb(0, 160, 160);">Virginia Tech, Virginia (Aug 2021 - Dec 2022)&nbsp;</span><br><span style="font-weight: normal !important;">Masters of Engineering in Computer Science, Current GPA - 3.81.</span><br><span style="font-weight: normal !important;">Associated with the Centre&nbsp;for Human-Computer Interaction.</span><br><span style="font-weight: normal !important;">Courses: Human-Factor &amp; System Design&nbsp;Usability Engineering, Models and theories in HCI.</span><br><br><span style="color: rgb(0, 160, 160);">Vellore Institute of Technology, India (Aug 2017 - Aug 2021)&nbsp; &nbsp; &nbsp; </span><span style="color: rgb(0, 128, 128);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Bachelor of Technology in Computer Science, CGPA - 7.94/10 (WES - 3.750).</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">My Professional Experience in the Field of UX</button></h2>
+                            <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div class="accordion-body">
+                                    <p class="text-start mb-0"><strong><span style="color: rgb(0, 160, 160); background-color: transparent;">Daughters App.-Remote, 08/2023 - Present</span></strong><br><strong><span style="color: rgb(37, 37, 57); background-color: transparent;">Product/UX Designer</span><span style="color: rgb(0, 142, 137); background-color: transparent;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></strong><br><span style="font-weight: normal !important; color: rgb(37, 37, 57); background-color: transparent;">Designed 20+ wireframes, prototypes, mock-ups implementing interaction design, UX principles in Figma ensuring engaging, user-friendly interfaces.</span><br><span style="font-weight: normal !important; color: rgb(37, 37, 57); background-color: transparent;">Conceptualized user focused UX designs for upcoming iOS app incorporating human factors psychology, accessible practices (WCAG), industry standards enhancing ease of use by 23%.</span><br><span style="font-weight: normal !important; color: rgb(37, 37, 57); background-color: transparent;">Analyzed stakeholder feedback, information architecture, user personas enhancing primary user flow, attaining an 85% task completion rate before launch.</span><br><br><strong><span style="color: rgb(0, 160, 160); background-color: transparent;">Fruitful, Inc. Remote, 04/2023 - 08/2023</span></strong><br><strong><span style="color: rgb(37, 37, 57); background-color: transparent;">UI/UX Designer (Contract)</span></strong><br><span style="font-weight: normal !important; color: rgb(37, 37, 57); background-color: transparent;">Analyzed user behavior, implemented A/B testing, evaluated changes on small user subsets mitigating risks of adverse revenue impact from major alterations.</span><br><span style="font-weight: normal !important; color: rgb(37, 37, 57); background-color: transparent;">Partnered with developers leveraging Agile methodologies, fostered partnerships facilitating iterative design, rapid feedback loops, efficient product development.</span><br><span style="font-weight: normal !important; color: rgb(37, 37, 57); background-color: transparent;">Integrated interaction/visual design principles, user journey analysis elevated dashboard engagement, attaining&nbsp; 10% increase in user satisfaction.</span><br><br><span style="color: rgb(0, 160, 160);">Avocademy Inc. - Remote, USA (01/2023) - Present</span><br>UI/UX Design Content Strategist (Contract)&nbsp;<br><span style="font-weight: normal !important;">Orchestrated creation of tailored content by collaborating with program managers establishing personas, user journey maps; achieving 20% increase in active user participation.</span><br><span style="font-weight: normal !important;">Capitalized on empathy-driven strategies, incorporating gamification, micro-interactions, stimulating 15% gain in user satisfaction.</span><br><br><span style="color: rgb(0, 160, 160);">CX Studios, Texas, USA (06/2022 - 08/2022)</span><br><span style="color: rgb(40, 40, 70);">UX Designer.</span><br><span style="font-weight: normal !important; background-color: transparent;">Devised customer journey maps, informed by user interviews, leading to 15% growth in data points about client's business goals &amp; user needs, guiding design decisions, user experiences aligned with user-focused solutions.</span><br><span style="font-weight: normal !important; background-color: transparent;">Coordinated collaborative design thinking sessions with design lead &amp; UX experts to develop wireframes, rapid prototypes, enabling early testing, validating concepts before final implementation.</span><br><span style="font-weight: normal !important; background-color: transparent;">Monitored CXStudios' 90-Day MVP Campaign's omnichannel initiatives using Adobe Analytics, Wevo.ai ensuring friction-free interactions resulting in 20% increase in customer acquisition.</span><br><br><span style="color: rgb(0, 160, 160);">Centillion, Mumbai, India (07/2020 - 11/2020)</span><br><span style="color: rgb(40, 40, 70);">UI/UX Designer.</span><br><span style="font-weight: normal !important; background-color: transparent;">Developed two prototype versions for A/B testing, driving user-oriented research on iOS apps, addressing concerns, proposed design changes, iterative updates.</span><br><span style="font-weight: normal !important; background-color: transparent;">Leveraged Google Analytics for comprehensive performance analysis, optimized engagement strategies achieving&nbsp; 2x increase in average app engagement time.</span><br><span style="font-weight: normal !important; background-color: transparent;">Executed in-depth user testing with 10+ participants via UserTesting.com, Utilizing insights for data-driven design enhancements, reducing bounce rate for primary user flow by 10%.</span><br><br><span style="color: rgb(0, 160, 160);">Aiesec, Beau Bassin, Plaines Wilhems District, Mauritius (06/2019 - 09/2019)</span><br><span style="color: rgb(40, 40, 70);">Web Design Intern. </span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Supervised web designing and front-end development and functions.&nbsp;</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Executed a performance reporting template. Led a transition to a paperless practice by implementing a faster, safer, accurate classroom system, receding office overhead by 15%.&nbsp;</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Collaborated with product and marketing teams to redesign the mobile onboarding process, boosting retention and user experience.</span><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Redesigned new user sign-up form and flow, driving a 10% increase. Implemented full-length operation and presented superior UI/UX design and visual components.</span><br><br><span style="color: rgb(0, 160, 160);">Soroptimist International - Aiesec, Rose-Hill, Mauritius (06/2019 - 08/2019)</span><br>Global Student Volunteer.<br><span style="font-weight: normal !important;">Counselled the NGO in providing two daily sessions to contribute and help all elderly &amp; youth.</span><br><span style="font-weight: normal !important;">Guided youth, showing youth a future of tomorrow! Interacted, engaged, and empowered elderly.&nbsp;</span><br><span style="font-weight: normal !important;">Imparted IT skills, aid classes, and soft skills training to 7-20 year-olds. Managed new potential structures and projects for growth of the NGO.&nbsp;</span><br><span style="font-weight: normal !important;">Coordinated in planning 10+ future projects to engage young and elderly groups, helping with logistics and administrative departments of the NGO by assisting in Accounting.&nbsp;</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" style="background: rgb(255, 255, 255);">
+                            <h2 class="accordion-header" role="tab" style="border-style: none;"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">My Awards and Certifications in UX</button></h2>
+                            <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div class="accordion-body">
+                                    <p class="mb-0"><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Build Wireframes and Low-Fidelity Prototypes -</span><span style="color: rgb(0, 128, 128);"> Google Career Certificates </span><span style="font-weight: normal !important; color: rgb(40, 40, 70);">- (06/2022)</span><br><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Start the UX Design Process: Empathize, Define, and Ideate - </span><span style="color: rgb(0, 128, 128);">Google Career Certificates </span><span style="font-weight: normal !important; color: rgb(40, 40, 70);">- (05/2022)</span><br><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Google Certification Foundations of User Experience (UX) Design - </span><span style="color: rgb(0, 128, 128);">Google Career Certificates</span><span style="font-weight: normal !important; color: rgb(40, 40, 70);"> - (01/2022)</span><br><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Google Certification in Introduction to Augmented Reality and ARCore - </span><span style="color: rgb(0, 128, 128);">Google </span><span style="font-weight: normal !important; color: rgb(40, 40, 70);">- (02/2021)</span><br><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Advanced UI/UX Designer Certification - </span><span style="color: rgb(0, 128, 128);">ITLH&nbsp; </span><span style="font-weight: normal !important; color: rgb(40, 40, 70);">- (08/2020)</span><br><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Hackathon </span><span style="color: rgb(0, 128, 128);">(Smart Web Application Development - Ethnus)</span><span style="font-weight: normal !important; color: rgb(40, 40, 70);"> - (10/2019)</span><br><br><span style="font-weight: normal !important; color: rgb(40, 40, 70);">Hack4cause </span><span style="color: rgb(0, 128, 128);">(VIT SCOPE &amp; IEEE - Society On Social Implications Of Technology.)</span><span style="font-weight: normal !important; color: rgb(40, 40, 70);"> - (03/2018)</span><br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center">
+        <div class="container text-muted py-4 py-lg-5">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><a class="link-secondary" href="About%20me.html"><br><strong><span style="color: rgb(40, 40, 70);">My work</span></strong></a></li>
+                <li class="list-inline-item me-4"><a class="link-secondary" href="faq.html"><br><strong><span style="color: rgb(40, 40, 70);">FAQ's&nbsp;</span></strong></a></li>
+                <li class="list-inline-item" style="margin-right: 24px;"><a class="link-secondary" href="testimonials.html"><br><strong><span style="color: rgb(40, 40, 70);">Testimonials</span></strong></a></li>
+                <li class="list-inline-item"><a class="link-secondary" href="contact.html"><br><br><strong><span style="color: rgb(40, 40, 70);">Contact</span></strong></a></li>
+            </ul>
+            <p class="text-center text-muted d-xxl-flex justify-content-xxl-center my-2">Copyright&nbsp;© 2023 TanishqBafna</p>
+        </div>
+    </footer>
+    <div class="d-flex d-xl-flex justify-content-center justify-content-lg-end justify-content-xl-end contra-div"><a href="https://contra.com/tanishqbafna?utm_campaign=HireMeOnContra&amp;utm_medium=950de569-83f0-4785-8bcc-1bdf32f1908d" target="_blank"><img src="assets/img/hiremeoncontra-dark@2x.png" style="height: calc(1rem + 4vh);"></a></div>
+    <div id="cursor"></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://contra.com/static/embed/sdk.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
